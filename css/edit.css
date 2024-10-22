@@ -1,0 +1,101 @@
+.bg {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    background-color: #F0F0FF; /* Set background color for demonstration */
+}
+
+.navbar {
+    background-color: #242c44; /* White color with 0.6 opacity */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navbar container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Align items to the ends */
+    align-items: center;
+    width: 100%; /* Ensure the container spans the entire width */
+    padding: 0 20px; /* Add padding to create space */
+}
+
+/* Navbar heading */
+.navbar-heading {
+    color: black;
+    margin: 0;
+    margin-left: auto; /* Push the heading to the right */
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.wrap {
+    background-color: rgba(255, 255, 240);
+    border-radius: 10px; /* Rounded corners */
+    width: 30%; /* Set width of the container */
+    margin: 20px auto; /* Center the container horizontally and provide some space from the top */
+    padding: 20px; /* Add some padding inside the container */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19); /* Add shadow */
+}
+
+.form-container {
+    width: 100%; /* Full width */
+    text-align: left; /* Center align the content */
+}
+
+label{
+    text-align: left;
+}
+
+input[type="number"],
+input[type="date"],
+input[type="text"],
+input[type="password"],
+select {
+    width: calc(100% - 10px); /* Adjust width and margin as needed */
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ddd; /* Input box color */
+    color: black; /* Text color */
+}
+
+button[type="submit"],
+button[type="button"],
+#saveBtn {
+    width: calc(100% - 10px); /* Adjust width and margin as needed */
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #004AAD; /* Input box color */
+    color: white; /* Button text color */
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+#saveBtn:hover {
+    background-color: green; /* Button background color on hover */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button[type="button"]:hover{
+    background-color: gold;
+    color: black;
+}

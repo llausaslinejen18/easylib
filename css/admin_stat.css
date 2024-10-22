@@ -1,0 +1,517 @@
+.bg {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    background-color: #F0F0FF; /* Set background color for demonstration */
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.6); /* White color with 0.6 opacity */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    margin-left: 240px;
+}
+
+/* Navbar container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Align items to the ends */
+    align-items: center;
+    width: 100%; /* Ensure the container spans the entire width */
+    padding: 0 20px; /* Add padding to create space */
+}
+
+/* Navbar heading */
+.navbar-heading {
+    color: black;
+    margin: 0;
+    margin-left: auto; /* Push the heading to the right */
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.sidebar {
+    background-color: #242c44; /* White color with 0.6 opacity */
+    width: 220px;
+    padding: 20px 10px 20px 10px;
+    height: 100%;
+    font-size: 18px;
+    position: fixed;
+    top: 0; /* Adjusted to match the navbar height */
+    color: white;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3); /* Add right-side shadow */
+}
+
+.sidebar-item {
+    padding: 10px 0; /* Adjusted padding */
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    color: white;
+    display: block; /* Changed display property to block */
+    text-align: center;
+    border-radius: 15px;
+}
+
+.sidebar-item.active {
+    background-color: gold; /* Set background color to gold */
+    color: black; /* Set text color to black */
+    font-weight: bold;
+    display: block; /* Changed display property to block */
+    padding: 10px 0; /* Adjusted padding */
+}
+
+.sidebar-item:hover {
+    background-color: gold; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-btn {
+    margin-top: auto; /* Pushes the logout button to the bottom */
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.logout-btn:hover {
+    background-color: crimson; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+}
+
+.secondary-navbar {
+    background-color: #242c44; /* White color with 0.6 opacity */
+    padding: 10px 20px;
+    display: block;
+    float: left;
+    align-items: center;
+    margin-left: 240px; /* Adjusted margin to start beside the sidebar */
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    top: 0; /* Adjusted to account for both navbar and sidebar heights */
+    z-index: 1000; /* Ensure it's above the content */
+}
+
+.secondary-navbar-item {
+    padding: 15px; /* Adjusted padding */
+    text-decoration: none;
+    color: white;
+    display: block; /* Changed display property to block */
+    border-left: 2px solid black;
+    float: left;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.secondary-navbar-item:hover {
+    background-color: white; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+}
+
+.secondary-navbar-item.active {
+    background-color: white; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+}
+
+/* Additional CSS for box styling */
+.content-container {
+    margin-top: 70px; /* Adjusted to match the height of the navbar */
+    margin-left: 240px; /* Adjusted to match the width of the sidebar */
+    padding-left: 20px; /* Add padding to separate content from sidebar */
+    overflow-y: auto; /* Add vertical scrollbar */
+    height: calc(100% - 70px); /* Adjusted to fill the remaining height */
+    padding-bottom: 20px;
+    
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+.search-bar input[type="text"],
+.search-bar input[type="number"],
+.search-bar select,
+.search-bar button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    display: inline-block; /* Ensures input and button are inline */
+    margin-right: 10px; /* Added margin-right to separate elements */
+}
+
+.search-bar input[type="text"] {
+    width: 20%; /* Adjust as needed */
+    border-radius: 15px;
+}
+
+.search-bar select {
+    width: 15%; /* Adjust as needed */
+    border-radius: 15px;
+}
+
+input[type="date"] {
+    width: 200px; /* Set the width as needed */
+    height: 25px; /* Set the height as needed */
+    padding: 3px; /* Add padding */
+    border: 1px solid #ccc; /* Add border for style */
+    border-radius: 5px; /* Add border radius */
+    background-color: #fff; /* Set background color */
+    color: #333; /* Set text color */
+    font-size: 16px; /* Set font size */
+    outline: none; /* Remove default focus outline */
+}
+
+input[type="date"]::placeholder {
+    color: #aaa; /* Set placeholder color */
+}
+
+input[type="date"]:hover,
+input[type="date"]:focus {
+    border-color: gold; /* Change border color on hover/focus */
+}
+
+.search-bar button[type="submit"] {
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.search-bar button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.search-bar button[type="button"] {
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px;
+    border: solid black 1px;
+}
+
+.search-bar button[type="button"]:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+#dataTable{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 25px;
+}
+
+/* Styling for table */
+table {
+    width: 98%;
+    margin-top: -10px;
+    font-size: 14px;
+    border-spacing: 0;
+    border-radius: 15px; /* Adjust the value as needed */
+    overflow: hidden;
+    border: 1px solid #ddd; /* Border for the table */
+}
+
+table tr{
+    color: black;
+    background-color: white;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.sort-dropdown {
+    margin-left: auto; /* Align to the right */
+    display: inline-block; /* Display as inline block */
+}
+
+.sort-dropdown select {
+    padding: 5px; /* Add some padding */
+    border: 1px solid #ccc; /* Add border for style */
+    border-radius: 5px; /* Add border radius */
+    background-color: #fff; /* Set background color */
+    color: #333; /* Set text color */
+}
+
+.print-button {
+    float: right;
+    margin-right: 0; /* Adjust the right margin as needed */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: black;
+    background-color: gold;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.print-button:hover{
+    color: white;
+    background-color: #242c44;
+}
+
+.fixed-date-time {
+    position: fixed;
+    top: 15px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    color: white;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+.fixed-date-time p {
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-date-time span {
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    display: flex; /* Use flexbox */
+    margin-bottom: 10px; /* Add margin between input groups */
+}
+
+.input,
+.select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px; /* Add margin between label and input/select */
+    max-width: 200px;
+    
+}
+
+/* CSS for edit and delete buttons */
+.edit-btn,
+.delete-btn {
+    border: none;
+    background-color: gold;
+    color: black;
+    border-radius: 30px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/* Edit button hover style */
+.edit-btn:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Delete button hover style */
+.delete-btn:hover {
+    background-color: red;
+    color: white;
+}
+        /* Style for the approve and reject buttons */
+        .action-buttons {
+            display: inline-block;
+        }
+        /* Style for the approve and reject buttons */
+        .approve-btn, .reject-btn {
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            outline: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .approve-btn {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+        .reject-btn {
+            background-color: #f44336; /* Red */
+            color: white;
+        }
+
+/* Styling for cart */
+.cart-header {
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.cart-content {
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    margin-top: 10px;
+}
+
+.cart-content button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.cart-content button:hover {
+    background-color: #45a049;
+}
+
+#cancelButton{
+    background-color: crimson;
+    color: white;
+}
+
+.scan-button{
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 7px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.scan-button:hover{
+    background-color: #242c44;
+    color: white;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 500px;
+    height: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: white; /* Input box color */
+    color: white; /* Text color */
+}
+
+.reserve-btn{
+    background-color: gold;
+    color: black;
+    border-radius: 50px;
+    border: 1px red;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.reserve-btn:hover{
+    background-color: blue;
+    color: white;
+}
+
+.more-info-btn{
+    background-color: gold;
+    color: black;
+    border-radius: 50px;
+    border: 1px gold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.more-info-btn:hover{
+    background-color: blue;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    background-color: white; /* Match the sidebar background */
+    border-radius: 15px;
+    width: 100%; /* Adjust width to fit the sidebar */
+}
+
+.dropdown-content a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content.show {
+    display: flex;
+}
+
+/* Style for the dropdown link to match other sidebar items */
+.dropdown-link {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    color: white;
+    display: block; /* Changed display property to block */
+    text-align: center;
+    border-radius: 15px;
+}
+
+.dropdown-link:hover {
+    background-color: gold; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+}
+
+.dropdown-link.active {
+    background-color: gold; /* Set background color to gold */
+    color: black; /* Set text color to black */
+    font-weight: bold;
+}
+
+.hell{
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}

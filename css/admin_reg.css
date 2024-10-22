@@ -1,0 +1,77 @@
+body {
+    font-family: 'Copperplate', 'Copperplate Gothic Light', fantasy;
+    margin: 0;
+    background-color: #20255C; /* Set background color for demonstration */
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.6); /* White color with 0.6 opacity */
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px; /* Adjust width as needed */
+}
+
+input[type="number"],
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 10px); /* Adjust width and margin as needed */
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: white; /* Input box color */
+    color: black; /* Text color */
+}
+
+button[type="submit"],
+button[type="button"] {
+    width: calc(100% - 10px); /* Adjust width and margin as needed */
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #004AAD; /* Input box color */
+    color: white; /* Button text color */
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: green; /* Button background color on hover */
+}
+button[type="button"]:hover {
+    background-color: crimson; /* Button background color on hover */
+}
+
+a {
+    text-decoration: none;
+    color: #20255C; /* Link color */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.logo {
+    height: 300px;
+    width: 300px; /* Adjust width as needed */
+    float: right;
+    margin-left: 50px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+

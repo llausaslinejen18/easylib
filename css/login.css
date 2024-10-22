@@ -1,0 +1,140 @@
+/* Body background styling */
+.bg {
+    font-family: 'Nunito', 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px); /* Adjust the height to account for the navbar */
+    margin: 0;
+    background-color: #F0F0FF; /* Set background color for demonstration */
+    margin-top: 70px;
+}
+
+/* Adjust the body margin to avoid overlap with the navbar */
+body {
+    margin-top: 70px; /* Adjust this value to match the height of the navbar */
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px; /* Adjust width as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19); /* Add shadow */
+    margin-top: -70px; /* Adjust margin-top to align with the fixed navbar */
+}
+
+.login-form {
+    margin-bottom: 20px;
+}
+
+/* Style for input boxes */
+input[type="text"],
+input[type="password"] {
+    width: 97%;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    background-color: #ddd; /* Input box color */
+    color: black; /* Text color */
+}
+
+/* Style for login button */
+.login-button {
+    color: black;
+    font-size: 20px;
+    background-color: #00ABE4;
+    border-radius: 15px; /* Border radius */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-button:hover{
+    color: black;
+    background-color: gold;
+}
+
+/* Style for link */
+p a {
+    color: #004AAD; /* Link color */
+}
+
+/* Style for link on hover */
+p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.elogo {
+    height: 350px;
+    width: 550px; /* Adjust width as needed */
+    float: right;
+}
+
+.user-type-dropdown {
+    top: 20px;
+    margin-left: 74%;
+    z-index: 10;
+}
+
+.user-type-dropdown select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #00ABE4; /* Navbar background color */
+    padding: 10px 20px;
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 0;
+    width: 100%; /* Make navbar full width */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19); /* Add shadow */
+    z-index: 1000; /* Ensure the navbar is on top of other content */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 8px 12px; /* Add padding to create the box effect */
+    border-radius: 5px; /* Add border radius to make it rounded */
+}
+
+.nav-links li a:hover {
+    color: black;
+    background-color: gold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for hover effect */
+}

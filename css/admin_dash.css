@@ -1,0 +1,331 @@
+.bg {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    background-color: #F0F0FF; /* Set background color for demonstration */
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.6); /* White color with 0.6 opacity */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navbar container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Align items to the ends */
+    align-items: center;
+    width: 100%; /* Ensure the container spans the entire width */
+    padding: 0 20px; /* Add padding to create space */
+}
+
+/* Navbar heading */
+.navbar-heading {
+    color: black;
+    margin: 0;
+    margin-left: auto; /* Push the heading to the right */
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.secondary-navbar {
+    background-color: #242c44; /* White color with 0.6 opacity */
+    padding: 10px 20px;
+    display: block;
+    float: left;
+    align-items: center;
+    margin-left: 240px; /* Adjusted margin to start beside the sidebar */
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    top: 0; /* Adjusted to account for both navbar and sidebar heights */
+    z-index: 1000; /* Ensure it's above the content */
+    color: white;
+}
+
+.secondary-navbar-item {
+    padding: 15px; /* Adjusted padding */
+    text-decoration: none;
+    color: white;
+    display: block; /* Changed display property to block */
+    border-left: 2px solid black;
+    float: left;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.secondary-navbar-item:hover {
+    background-color: white; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+}
+
+.secondary-navbar-item.active {
+    background-color: white; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.sidebar {
+    background-color: #242c44; /* White color with 0.6 opacity */
+    width: 220px;
+    padding: 20px 10px 20px 10px;
+    height: 100vh;
+    font-size: 18px;
+    position: fixed;
+    top: 0; /* Adjusted to match the navbar height */
+    color: white;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3); /* Add right-side shadow */
+}
+
+.sidebar-item {
+    padding: 10px 0; /* Adjusted padding */
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    color: white;
+    display: block; /* Changed display property to block */
+    text-align: center;
+    border-radius: 15px;
+}
+
+.sidebar-item.active {
+    background-color: gold; /* Set background color to gold */
+    color: black; /* Set text color to black */
+    font-weight: bold;
+    display: block; /* Changed display property to block */
+    padding: 10px 0; /* Adjusted padding */
+}
+
+.sidebar-item:hover {
+    background-color: gold; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-btn {
+    margin-top: auto; /* Pushes the logout button to the bottom */
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.logout-btn:hover {
+    background-color: crimson; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+}
+
+/* Additional CSS for box styling */
+.content-container {
+    margin-top: 7%;
+    margin-left: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row; /* Align boxes in a row */
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 120px;
+    margin: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19); /* Add shadow */
+}
+
+.box:hover {
+    color: #111;
+    box-shadow: 0 0 50px #002966; /* Deep blue */
+    transition: 0.3s;
+}
+
+.box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    margin-top: 6%;
+    margin-left: 4%;
+}
+
+.box-icon {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.box-icon img {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 60px; /* Adjusted icon size */
+    height: auto;
+}
+
+.box-text {
+    display: inline-block;
+    vertical-align: top;
+    padding: 2px;
+    text-align: left;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.attendance {
+    background-color: #FFFF66;
+}
+
+.pending {
+    background-color: #8dc6ff;
+}
+
+.borrowed {
+    background-color: #FF914D; 
+}
+
+.overdued {
+    background-color: #FF5757; 
+}
+
+.total-books {
+    background-color: #0CC0DF; 
+}
+
+.assets {
+    background-color: #0DCD47;
+}
+
+.pdf {
+    background-color: #D9F88D;
+}
+
+.active-users {
+    background-color: #0DE226;
+}
+
+.pending-users {
+    background-color: #ffc107;
+}
+
+.disabled-users {
+    background-color: #DE3163;
+}
+
+.librarian{
+    background-color: #BDECB6;
+}
+
+.box-link {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border-top: 1px solid black;
+}
+
+.more-info-link {
+    position: absolute;
+    bottom: 3px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    border-top: 1px solid black;
+}
+
+.fixed-date-time {
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    color: white;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+.fixed-date-time p {
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-date-time span {
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    background-color: white; /* Match the sidebar background */
+    border-radius: 15px;
+    width: 100%; /* Adjust width to fit the sidebar */
+}
+
+.dropdown-content a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content.show {
+    display: flex;
+}
+
+/* Style for the dropdown link to match other sidebar items */
+.dropdown-link {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    color: white;
+    display: block; /* Changed display property to block */
+    text-align: center;
+    border-radius: 15px;
+}
+
+.dropdown-link:hover {
+    background-color: gold; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+}
+
+.hell{
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}

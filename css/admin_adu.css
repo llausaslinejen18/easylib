@@ -1,0 +1,297 @@
+.bg {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    background-color: #F0F0FF; /* Set background color for demonstration */
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.6); /* White color with 0.6 opacity */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    margin-left: 240px;
+}
+
+/* Navbar container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Align items to the ends */
+    align-items: center;
+    width: 100%; /* Ensure the container spans the entire width */
+    padding: 0 20px; /* Add padding to create space */
+}
+
+/* Navbar heading */
+.navbar-heading {
+    color: black;
+    margin: 0;
+    margin-left: auto; /* Push the heading to the right */
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.sidebar {
+    background-color: #242c44; /* White color with 0.6 opacity */
+    width: 220px;
+    padding: 20px 10px 20px 10px;
+    height: 100%;
+    font-size: 18px;
+    position: fixed;
+    top: 0; /* Adjusted to match the navbar height */
+    color: white;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3); /* Add right-side shadow */
+}
+
+.sidebar-item {
+    padding: 10px 0; /* Adjusted padding */
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    color: white;
+    display: block; /* Changed display property to block */
+    text-align: center;
+    border-radius: 15px;
+}
+
+.sidebar-item.active {
+    background-color: gold; /* Set background color to gold */
+    color: black; /* Set text color to black */
+    font-weight: bold;
+    display: block; /* Changed display property to block */
+    padding: 10px 0; /* Adjusted padding */
+}
+
+.sidebar-item:hover {
+    background-color: gold; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-btn {
+    margin-top: auto; /* Pushes the logout button to the bottom */
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.logout-btn:hover {
+    background-color: crimson; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+}
+
+.secondary-navbar {
+    background-color: #242c44; /* White color with 0.6 opacity */
+    padding: 10px 20px;
+    display: block;
+    float: left;
+    align-items: center;
+    margin-left: 240px; /* Adjusted margin to start beside the sidebar */
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    top: 0; /* Adjusted to account for both navbar and sidebar heights */
+    z-index: 1000; /* Ensure it's above the content */
+}
+
+.secondary-navbar-item {
+    padding: 15px; /* Adjusted padding */
+    text-decoration: none;
+    color: white;
+    display: block; /* Changed display property to block */
+    border-left: 2px solid black;
+    float: left;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.secondary-navbar-item:hover {
+    background-color: white; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.secondary-navbar-item.active {
+    background-color: white; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+}
+
+/* Additional CSS for box styling */
+.content-container {
+    margin-top: 70px; /* Adjusted to match the height of the navbar */
+    margin-left: 240px; /* Adjusted to match the width of the sidebar */
+    padding-left: 20px; /* Add padding to separate content from sidebar */
+    overflow-y: auto; /* Add vertical scrollbar */
+    height: calc(100% - 70px); /* Adjusted to fill the remaining height */
+    padding-bottom: 20px;
+}
+
+.container {
+    background-color: white; /* White color with 0.6 opacity */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Adjust width as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19); /* Add shadow */
+    margin-top: 100px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input[type="number"],
+input[type="date"],
+input[type="text"],
+input[type="password"],
+input[type="file"],
+select {
+    width: calc(100% - 10px); /* Adjust width and margin as needed */
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ddd; /* Input box color */
+    color: black; /* Text color */
+}
+
+select {
+    appearance: none; /* Remove default appearance */
+    background-image: url("data:image/svg+xml,%3csvg fill='%23000000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3c/svg%3e"); /* Add custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 5px top 50%;
+    width: 100%;
+}
+
+button[type="submit"],
+button[type="button"] {
+    width: calc(100% - 10px); /* Adjust width and margin as needed */
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #004AAD; /* Input box color */
+    color: white; /* Button text color */
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: green; /* Button background color on hover */
+}
+button[type="button"]:hover {
+    background-color: crimson; /* Button background color on hover */
+}
+
+a {
+    text-decoration: none;
+    color: #20255C; /* Link color */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.qr-code-text {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    background-color: white; /* Match the sidebar background */
+    border-radius: 15px;
+    width: 100%; /* Adjust width to fit the sidebar */
+}
+
+.dropdown-content a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content.show {
+    display: flex;
+}
+
+/* Style for the dropdown link to match other sidebar items */
+.dropdown-link {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    color: white;
+    display: block; /* Changed display property to block */
+    text-align: center;
+    border-radius: 15px;
+}
+
+.dropdown-link:hover {
+    background-color: gold; /* Set background color to gold on hover */
+    color: black; /* Set text color to black on hover */
+    font-weight: bold;
+}
+
+.dropdown-link.active {
+    background-color: gold; /* Set background color to gold */
+    color: black; /* Set text color to black */
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.hell{
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+
+.fixed-date-time {
+    position: fixed;
+    top: 15px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    color: white;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+.fixed-date-time p {
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-date-time span {
+    font-weight: bold;
+}
